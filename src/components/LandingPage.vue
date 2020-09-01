@@ -7,7 +7,7 @@
           :typeSpeed="40"
           :backSpeed="100"
           style="color: black; height: 100vh;"
-          :strings="['Motivated', 'Experienced', 'Creative', 'a Developer']"
+          :strings="['Motivated', 'Experienced', 'Creative', 'Developer']"
         >
           <div>
             <div id="lg-h1">
