@@ -59,7 +59,7 @@ export default {};
 
 #main-sm {
   color: black;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 100;
 }
 
@@ -76,7 +76,7 @@ h1 {
 
 #sm-h1 {
   line-height: 90%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 

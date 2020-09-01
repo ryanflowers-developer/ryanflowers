@@ -18,8 +18,12 @@
           <br />
         </v-col>
         <v-col cols="10" offset="1" lg="4" offset-lg="0" class="my-auto">
-          <v-icon style="margin: 20px;" size="100" color="#3c8fc6"
-            >mdi-linkedin</v-icon
+          <a
+            href="https://www.linkedin.com/in/ryanflowers-developer/"
+            target="_blank"
+            ><v-icon style="margin: 20px;" size="100" color="#3c8fc6">
+              mdi-linkedin</v-icon
+            ></a
           >
           <v-icon style="margin: 20px;" size="100" color="#e54d26"
             >mdi-github</v-icon
@@ -101,4 +105,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+a {
+  text-decoration: none;
+}
+</style>
