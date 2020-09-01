@@ -1,0 +1,20 @@
+{
+  "name": "ryanflowers",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "vue-scrollto": "^2.18.2",
+    "vue-typed-js": "^0.1.2",
+    "vuelidate": "^0.7.5",
+    "vuetify": "^2.3.8"
+  },
+  "devDependencies": {
+    "@mdi/font": "^5.5.55",
+    "material-design-icons-iconfont": "^5.0.1"
+  }
+}
