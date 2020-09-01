@@ -11,26 +11,28 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
 
-    <v-btn text :color="navColor" href="#" v-scroll-to="'#services'"
-      >Services</v-btn
-    >
-    <v-btn text :color="navColor" href="#" v-scroll-to="'#skills'"
-      >Skills</v-btn
-    >
-    <v-btn text :color="navColor" href="#" v-scroll-to="'#projects'"
-      >Projects</v-btn
-    >
-    <v-btn text :color="navColor" href="#" v-scroll-to="'#ref'"
-      >References</v-btn
-    >
-    <v-btn text :color="navColor" href="#" v-scroll-to="'#contact'"
-      >Contact</v-btn
-    >
+    <div class="hidden-sm-and-down">
+      <v-btn text :color="navColor" href="#" v-scroll-to="'#services'"
+        >Services</v-btn
+      >
+      <v-btn text :color="navColor" href="#" v-scroll-to="'#skills'"
+        >Skills</v-btn
+      >
+      <v-btn text :color="navColor" href="#" v-scroll-to="'#projects'"
+        >Projects</v-btn
+      >
+      <v-btn text :color="navColor" href="#" v-scroll-to="'#ref'"
+        >References</v-btn
+      >
+      <v-btn text :color="navColor" href="#" v-scroll-to="'#contact'"
+        >Contact</v-btn
+      >
+    </div>
 
     <v-app-bar-nav-icon
       @click.stop="drawer = !drawer"
       class="hidden-md-and-up"
-      style="color: blue;"
+      style="color: white;"
     ></v-app-bar-nav-icon>
   </v-app-bar>
 </template>
