@@ -40,5 +40,6 @@ export default {
 html {
   overflow-y: scroll;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 </style>
