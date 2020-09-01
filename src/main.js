@@ -4,13 +4,17 @@ import "vuetify/dist/vuetify.min.css";
 import DefaultLayout from "~/layouts/Default.vue";
 import "material-design-icons-iconfont/dist/material-design-icons.css";
 import VueTypedJs from "vue-typed-js";
-var VueScrollTo = require("vue-scrollto");
+import VueScrollTo from "vue-scrollto";
 
-if (typeof window === "undefined") {
-  global.window = {};
-}
+// var VueScrollTo = require("vue-scrollto");
 
-export default function(Vue, { appOptions, head }) {
+// global.navigator.userAgent = "node";
+
+// if (typeof window === "undefined") {
+//   global.window = {};
+// }
+
+export default function(Vue, { appOptions, head, isClient }) {
   head.link.push({
     rel: "stylesheet",
     href:
@@ -33,21 +37,22 @@ export default function(Vue, { appOptions, head }) {
   }; //const opts = { ... } //opts includes, vuetify themes, icons, etc.
 
   Vue.use(Vuetify);
-  Vue.use(VueTypedJs);
-
-  Vue.use(VueScrollTo, {
-    container: "body",
-    duration: 900,
-    easing: "ease",
-    offset: -64,
-    force: true,
-    cancelable: true,
-    onStart: false,
-    onDone: false,
-    onCancel: false,
-    x: false,
-    y: true,
-  });
+  if (isClient) {
+    Vue.use(VueTypedJs);
+    Vue.use(VueScrollTo, {
+      container: "body",
+      duration: 900,
+      easing: "ease",
+      offset: -64,
+      force: true,
+      cancelable: true,
+      onStart: false,
+      onDone: false,
+      onCancel: false,
+      x: false,
+      y: true,
+    });
+  }
 
   appOptions.vuetify = new Vuetify(opts);
 

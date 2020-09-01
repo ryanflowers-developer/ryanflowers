@@ -6,5 +6,9 @@
 
 module.exports = {
   siteName: "Ryan Flowers",
-  plugins: [],
+  plugins: [
+    {
+      use: "gridsome-plugin-modal",
+    },
+  ],
 };
