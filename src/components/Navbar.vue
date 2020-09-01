@@ -29,10 +29,78 @@
       >
     </div>
 
+    <v-navigation-drawer
+      app
+      right
+      v-model="drawer"
+      absolute
+      temporary
+      color="black"
+    >
+      <v-app-bar-nav-icon
+        @click.stop="drawer = !drawer"
+        class="hidden-md-and-up"
+        style="color: white;"
+      ></v-app-bar-nav-icon>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="text-center" style="color: white;"
+            >Ryan Flowers
+          </v-list-item-title>
+          <v-spacer></v-spacer>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+      <div>
+        <v-btn
+          @click="drawer = false"
+          style="color: white;"
+          text
+          href="#"
+          v-scroll-to="'#services'"
+          >Services</v-btn
+        >
+        <v-btn
+          @click="drawer = false"
+          style="color: white;"
+          text
+          href="#"
+          v-scroll-to="'#skills'"
+          >Skills</v-btn
+        >
+        <v-btn
+          @click="drawer = false"
+          style="color: white;"
+          text
+          href="#"
+          v-scroll-to="'#projects'"
+          >Projects</v-btn
+        >
+        <v-btn
+          @click="drawer = false"
+          style="color: white;"
+          text
+          href="#"
+          v-scroll-to="'#ref'"
+          >References</v-btn
+        >
+        <v-btn
+          @click="drawer = false"
+          style="color: white;"
+          text
+          href="#"
+          v-scroll-to="'#contact'"
+          >Contact</v-btn
+        >
+      </div>
+    </v-navigation-drawer>
+
     <v-app-bar-nav-icon
       @click.stop="drawer = !drawer"
       class="hidden-md-and-up"
       style="color: white;"
+      v-if="isHidden"
     ></v-app-bar-nav-icon>
   </v-app-bar>
 </template>
@@ -48,9 +116,10 @@ query {
 <script>
 export default {
   data: () => ({
+    isHidden: false,
     dynamic: "transparent",
-    drawer: null,
     navColor: "black",
+    drawer: false,
   }),
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
@@ -64,9 +133,11 @@ export default {
       if (window.scrollY > 0) {
         this.dynamic = "black";
         this.navColor = "white";
+        this.isHidden = true;
       } else {
         this.dynamic = "transparent";
         this.navColor = "black";
+        this.isHidden = false;
       }
     },
   },

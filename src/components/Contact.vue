@@ -6,26 +6,32 @@
       <br />
 
       <v-row>
-        <v-col cols="10" offset="1" lg="4" offset-lg="2">
-          <div class="text-center">
+        <v-col cols="10" offset="1" lg="4" offset-lg="3">
+          <div class="text-left">
             <v-icon color="#61dafb" size="75">mdi-phone</v-icon
-            ><span> (989)763-7452</span> <br />
+            ><span class="contact-text"> (989)763-7452</span> <br />
             <br />
             <v-icon color="#61dafb" size="75">mdi-email</v-icon
-            ><span> ryanflowers.developer@gmail.com</span>
+            ><span class="contact-text"> ryanflowers.developer@gmail.com</span>
           </div>
           <br />
           <br />
         </v-col>
-        <v-col cols="10" offset="1" lg="4" offset-lg="0" class="my-auto">
+        <v-col
+          cols="10"
+          offset="1"
+          lg="4"
+          offset-lg="0"
+          class="my-auto text-left"
+        >
           <a
             href="https://www.linkedin.com/in/ryanflowers-developer/"
             target="_blank"
-            ><v-icon style="margin: 20px;" size="100" color="#3c8fc6">
+            ><v-icon style="margin: 20px;" size="75" color="#3c8fc6">
               mdi-linkedin</v-icon
             ></a
           >
-          <v-icon style="margin: 20px;" size="100" color="#e54d26"
+          <v-icon style="margin: 20px;" size="75" color="#e54d26"
             >mdi-github</v-icon
           >
         </v-col>
@@ -108,5 +114,9 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
+}
+
+.contact-text {
+  font-size: 1rem;
 }
 </style>

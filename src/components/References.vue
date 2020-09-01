@@ -6,7 +6,9 @@
           <v-sheet color="black" height="100%">
             <v-row class="fill-height" align="center" justify="center">
               <div>
-                <v-icon :color="slide.color" size="200">{{ slide.icon }}</v-icon>
+                <v-icon :color="slide.color" size="200">{{
+                  slide.icon
+                }}</v-icon>
                 <br />
 
                 <h1>{{ slide.name }}</h1>
@@ -43,7 +45,7 @@ export default {
           icon: "mdi-human-greeting",
           name: "Jacob Anderson",
           quote:
-            '"Ryan is such a delight to be around. You can always trust him to listen and get things done."',
+            '"Ryan is someone you can always trust to listen and get things done."',
           color: "#60dafb",
         },
       ],

@@ -36,4 +36,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+</style>

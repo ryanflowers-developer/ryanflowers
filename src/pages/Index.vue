@@ -68,8 +68,4 @@ body,
   font-family: Geneva, "Times New Roman", serif;
   font-weight: 500;
 }
-html {
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
 </style>
