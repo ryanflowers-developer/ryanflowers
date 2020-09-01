@@ -6,6 +6,10 @@ import "material-design-icons-iconfont/dist/material-design-icons.css";
 import VueTypedJs from "vue-typed-js";
 var VueScrollTo = require("vue-scrollto");
 
+if (typeof window === "undefined") {
+  global.window = {};
+}
+
 export default function(Vue, { appOptions, head }) {
   head.link.push({
     rel: "stylesheet",
