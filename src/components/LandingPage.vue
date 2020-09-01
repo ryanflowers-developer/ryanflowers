@@ -15,7 +15,7 @@
                 <h1>Ryan Flowers</h1>
               </span>
               <div
-                style="background-image: linear-gradient(to right , #41b883 20%, #c4473a 20% 40%, #61dafb 40% 60%, #e54d26 60% 80%, #3c8fc6 80% 100%; height: 3px;"
+                style="background-image: linear-gradient(to right , #41b883 20%, #c4473a 20% 40%, #61dafb 40% 60%, #e54d26 60% 80%, #3c8fc6 80% 100%; height: 3px; min-width: auto;"
               ></div>
               <span class="typing main"></span>
             </div>
