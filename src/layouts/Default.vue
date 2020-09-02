@@ -47,7 +47,6 @@ html {
   top: 0;
   max-width: 100%;
   min-width: 100%;
-  margin-left: 500px;
   padding: 0px;
 }
 </style>
