@@ -7,21 +7,31 @@
       <v-col lg="10" md="12" offset-lg="1">
         <v-row>
           <v-col cols="12" lg="4" sm="12">
-            <v-hover v-slot:default="{ hover }">
-              <v-card
-                transition="scale-transition"
-                origin="center center"
-                :elevation="hover ? 16 : 2"
-              >
-                <v-card-title class="justify-center">Front End</v-card-title>
-                <v-card-subtitle>Fast | Responsive | Intuitive</v-card-subtitle>
-                <v-icon color="#41b883" size="100">mdi-laptop</v-icon>
-                <v-card-text>
-                  UI/UX applications designed to be lightning quick, silky
-                  smooth, intuitive and accessible.
-                </v-card-text>
-              </v-card>
-            </v-hover>
+            <v-lazy
+              v-model="isActive"
+              :options="{
+          threshold: .5
+        }"
+              min-height="100"
+              transition="scale-transition"
+              origin="center center"
+            >
+              <v-hover v-slot:default="{ hover }">
+                <v-card
+                  transition="scale-transition"
+                  origin="center center"
+                  :elevation="hover ? 16 : 2"
+                >
+                  <v-card-title class="justify-center">Front End</v-card-title>
+                  <v-card-subtitle>Fast | Responsive | Intuitive</v-card-subtitle>
+                  <v-icon color="#41b883" size="100">mdi-laptop</v-icon>
+                  <v-card-text>
+                    UI/UX applications designed to be lightning quick, silky
+                    smooth, intuitive and accessible.
+                  </v-card-text>
+                </v-card>
+              </v-hover>
+            </v-lazy>
           </v-col>
 
           <v-col cols="12" lg="4" sm="12">
@@ -30,8 +40,9 @@
               :options="{
           threshold: .5
         }"
-              min-height="200"
-              transition="fade-transition"
+              min-height="100"
+              transition="scale-transition"
+              origin="center center"
             >
               <v-hover v-slot:default="{ hover }">
                 <v-card :elevation="hover ? 16 : 2">
@@ -47,17 +58,27 @@
             </v-lazy>
           </v-col>
           <v-col cols="12" lg="4" sm="12">
-            <v-hover v-slot:default="{ hover }">
-              <v-card :elevation="hover ? 16 : 2">
-                <v-card-title class="justify-center">Mobile Apps</v-card-title>
-                <v-card-subtitle>Structure | Design | Performance</v-card-subtitle>
-                <v-icon color="#61dafb" size="100">stay_primary_portrait</v-icon>
-                <v-card-text>
-                  Mobile apps designed to be productive, performant and
-                  reliable. Quality is the highest priority.
-                </v-card-text>
-              </v-card>
-            </v-hover>
+            <v-lazy
+              v-model="isActive"
+              :options="{
+          threshold: .5
+        }"
+              min-height="100"
+              transition="scale-transition"
+              origin="center center"
+            >
+              <v-hover v-slot:default="{ hover }">
+                <v-card :elevation="hover ? 16 : 2">
+                  <v-card-title class="justify-center">Mobile Apps</v-card-title>
+                  <v-card-subtitle>Structure | Design | Performance</v-card-subtitle>
+                  <v-icon color="#61dafb" size="100">stay_primary_portrait</v-icon>
+                  <v-card-text>
+                    Mobile apps designed to be productive, performant and
+                    reliable. Quality is the highest priority.
+                  </v-card-text>
+                </v-card>
+              </v-hover>
+            </v-lazy>
           </v-col>
         </v-row>
       </v-col>
