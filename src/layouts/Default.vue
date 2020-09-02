@@ -37,16 +37,16 @@ export default {
 </script>
 
 <style>
-html {
+html,
+body,
+* {
   overflow-x: hidden;
+  padding: 0px;
+  margin: 0;
 }
 
 .v-app {
-  left: 0;
-  top: 0;
   max-width: 100vw;
   min-width: 100vw;
-  padding: 0px;
-  margin-left: 5px;
 }
 </style>
