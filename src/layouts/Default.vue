@@ -43,7 +43,8 @@ html {
 }
 
 .v-app {
-  max-width: 100vw;
+  max-width: 100%;
+  min-width: 100%;
   margin: 0px;
   padding: 0px;
 }
