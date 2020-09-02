@@ -25,7 +25,14 @@
           </v-col>
 
           <v-col cols="12" lg="4" sm="12">
-            <transition name="fade" appear>
+            <v-lazy
+              v-model="isActive"
+              :options="{
+          threshold: .5
+        }"
+              min-height="200"
+              transition="fade-transition"
+            >
               <v-hover v-slot:default="{ hover }">
                 <v-card :elevation="hover ? 16 : 2">
                   <v-card-title class="justify-center">Back End</v-card-title>
@@ -37,7 +44,7 @@
                   </v-card-text>
                 </v-card>
               </v-hover>
-            </transition>
+            </v-lazy>
           </v-col>
           <v-col cols="12" lg="4" sm="12">
             <v-hover v-slot:default="{ hover }">

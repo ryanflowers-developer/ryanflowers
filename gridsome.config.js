@@ -6,6 +6,6 @@
 
 module.exports = {
   siteName: "Ryan Flowers",
-  titleTemplate: `%s | Gridsome`,
+  titleTemplate: `%s | Ryan Flowers`,
   plugins: [],
 };
