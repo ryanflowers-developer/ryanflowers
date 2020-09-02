@@ -40,6 +40,9 @@ export default {
 html {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.v-app {
   max-width: 100vw;
 }
 </style>
