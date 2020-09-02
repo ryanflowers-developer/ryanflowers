@@ -38,7 +38,6 @@ export default {
 
 <style>
 html {
-  overflow-y: scroll;
   overflow-x: hidden;
 }
 
