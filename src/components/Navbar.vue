@@ -1,6 +1,8 @@
 <template>
   <v-app-bar :scroll="handleScroll" :color="dynamic" elevate-on-scroll scroll-threshold="10" fixed>
-    <v-toolbar-title class="title">{{ $static.metadata.siteName }}</v-toolbar-title>
+    <a href="#" v-scroll-to="'#top'">
+      <v-toolbar-title class="title">{{ $static.metadata.siteName }}</v-toolbar-title>
+    </a>
     <v-spacer></v-spacer>
 
     <div class="hidden-sm-and-down">
@@ -11,7 +13,15 @@
       <v-btn text :color="navColor" href="#" v-scroll-to="'#contact'">Contact</v-btn>
     </div>
 
-    <v-navigation-drawer app v-model="drawer" absolute right temporary color="black">
+    <v-navigation-drawer
+      app
+      v-model="drawer"
+      absolute
+      right
+      temporary
+      color="black"
+      class="text-center"
+    >
       <v-app-bar-nav-icon
         @click.stop="drawer = !drawer"
         class="hidden-md-and-up"
@@ -19,7 +29,6 @@
       ></v-app-bar-nav-icon>
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="text-center" style="color: white;">Ryan Flowers</v-list-item-title>
           <v-spacer></v-spacer>
         </v-list-item-content>
       </v-list-item>
@@ -127,5 +136,10 @@ a {
   text-decoration: none;
   margin: 20px;
   /* color: #c4473a !important; */
+}
+
+.v-list-item-title {
+  margin: 0px !important;
+  padding: 0px !important;
 }
 </style>
