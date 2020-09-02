@@ -40,7 +40,7 @@ export default {
 html,
 body {
   overflow-x: hidden;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   padding: 0px;
   margin: 0;
 }
