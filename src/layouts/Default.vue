@@ -45,8 +45,8 @@ html {
 .v-app {
   left: 0;
   top: 0;
-  max-width: 100%;
-  min-width: 100%;
+  max-width: 100vw;
+  min-width: 100vw;
   padding: 0px;
 }
 </style>
