@@ -2,7 +2,7 @@
   <v-app>
     <v-row id="top">
       <v-col class="d-none d-md-flex" cols="12" md="5">
-        <v-img height="100vh" src="https://i.imgur.com/MbCOsqK.jpg"></v-img>
+        <v-img height="100vw" src="https://i.imgur.com/MbCOsqK.jpg"></v-img>
       </v-col>
 
       <v-col class="hidden-md-and-up" cols="12" md="5">
@@ -45,8 +45,8 @@ html {
 .v-app {
   left: 0;
   top: 0;
-  max-width: 100%;
-  min-width: 100%;
+  max-width: 100vw;
+  min-width: 100vw;
   padding: 0px;
 }
 </style>
