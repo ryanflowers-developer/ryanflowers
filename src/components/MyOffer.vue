@@ -25,9 +25,7 @@
               <v-hover v-slot:default="{ hover }">
                 <v-card :elevation="hover ? 16 : 2">
                   <v-card-title class="justify-center">Back End</v-card-title>
-                  <v-card-subtitle
-                    >Efficient | Inventive | Effective</v-card-subtitle
-                  >
+                  <v-card-subtitle>Efficient | Inventive | Effective</v-card-subtitle>
                   <v-icon color="#c4473a" size="100">code</v-icon>
                   <v-card-text>
                     Backend systems designed for rapid data delivery, harnessing
@@ -41,12 +39,8 @@
             <v-hover v-slot:default="{ hover }">
               <v-card :elevation="hover ? 16 : 2">
                 <v-card-title class="justify-center">Mobile Apps</v-card-title>
-                <v-card-subtitle
-                  >Structure | Design | Performance</v-card-subtitle
-                >
-                <v-icon color="#61dafb" size="100"
-                  >stay_primary_portrait</v-icon
-                >
+                <v-card-subtitle>Structure | Design | Performance</v-card-subtitle>
+                <v-icon color="#61dafb" size="100">stay_primary_portrait</v-icon>
                 <v-card-text>
                   Mobile apps designed to be productive, performant and
                   reliable. Quality is the highest priority.
@@ -79,11 +73,9 @@ export default {};
 
 .fade-active {
   transition: opacity 1s;
-  opacity: 1;
 }
 
 .fade-leave {
-  opacity: 1;
 }
 
 .fade-leave-active {
