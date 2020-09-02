@@ -8,7 +8,11 @@
         <v-row>
           <v-col cols="12" lg="4" sm="12">
             <v-hover v-slot:default="{ hover }">
-              <v-card :elevation="hover ? 16 : 2">
+              <v-card
+                transition="scale-transition"
+                origin="center center"
+                :elevation="hover ? 16 : 2"
+              >
                 <v-card-title class="justify-center">Front End</v-card-title>
                 <v-card-subtitle>Fast | Responsive | Intuitive</v-card-subtitle>
                 <v-icon color="#41b883" size="100">mdi-laptop</v-icon>
