@@ -38,10 +38,15 @@ export default {
 
 <style>
 html,
-body,
-* {
+body {
   overflow-x: hidden;
+  overflow-y: scroll;
   padding: 0px;
   margin: 0;
+}
+
+.v-app {
+  min-width: 100vw;
+  max-width: 100vw;
 }
 </style>
