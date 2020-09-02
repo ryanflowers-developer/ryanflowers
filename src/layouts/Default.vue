@@ -46,7 +46,5 @@ body,
 }
 
 .v-app {
-  max-width: 100vw;
-  min-width: 100vw;
 }
 </style>
