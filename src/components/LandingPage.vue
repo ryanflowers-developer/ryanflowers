@@ -23,7 +23,7 @@
     </v-row>
 
     <v-row class="hidden-md-and-up">
-      <v-col col="6" offset="6" class="text-center mt-2">
+      <v-col col="7" offset="5" class="text-center mt-4">
         <vue-typed-js
           :loop="true"
           :typeSpeed="40"
@@ -59,7 +59,7 @@ export default {};
 
 #main-sm {
   color: black;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 
@@ -76,7 +76,7 @@ h1 {
 
 #sm-h1 {
   line-height: 90%;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 
