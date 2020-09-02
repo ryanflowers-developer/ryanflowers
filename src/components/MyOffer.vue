@@ -6,7 +6,7 @@
     <v-row>
       <v-col lg="10" md="12" offset-lg="1">
         <v-row>
-          <v-col lg="4" sm="12">
+          <v-col cols="12" lg="4" sm="12">
             <v-hover v-slot:default="{ hover }">
               <v-card :elevation="hover ? 16 : 2">
                 <v-card-title class="justify-center">Front End</v-card-title>
@@ -20,7 +20,7 @@
             </v-hover>
           </v-col>
 
-          <v-col lg="4" sm="12">
+          <v-col cols="12" lg="4" sm="12">
             <transition name="fade">
               <v-hover v-slot:default="{ hover }">
                 <v-card :elevation="hover ? 16 : 2">
@@ -35,7 +35,7 @@
               </v-hover>
             </transition>
           </v-col>
-          <v-col lg="4" sm="12">
+          <v-col cols="12" lg="4" sm="12">
             <v-hover v-slot:default="{ hover }">
               <v-card :elevation="hover ? 16 : 2">
                 <v-card-title class="justify-center">Mobile Apps</v-card-title>

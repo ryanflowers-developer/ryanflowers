@@ -44,7 +44,4 @@ body,
   padding: 0px;
   margin: 0;
 }
-
-.v-app {
-}
 </style>
