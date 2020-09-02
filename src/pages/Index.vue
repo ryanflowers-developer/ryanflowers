@@ -48,6 +48,7 @@ import References from "~/components/References.vue";
 import Contact from "~/components/Contact.vue";
 
 export default {
+  title: "Portfolio",
   components: {
     LandingPage,
     MyOffer,

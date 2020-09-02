@@ -21,7 +21,7 @@
           </v-col>
 
           <v-col cols="12" lg="4" sm="12">
-            <transition name="fade">
+            <transition name="fade" appear>
               <v-hover v-slot:default="{ hover }">
                 <v-card :elevation="hover ? 16 : 2">
                   <v-card-title class="justify-center">Back End</v-card-title>
@@ -72,14 +72,14 @@ export default {};
 }
 
 .fade-active {
-  transition: opacity 1s;
+  transition: opacity 2s;
 }
 
 .fade-leave {
 }
 
 .fade-leave-active {
-  transition: opacity 1s;
+  transition: opacity 2s;
   opacity: 0;
 }
 </style>
